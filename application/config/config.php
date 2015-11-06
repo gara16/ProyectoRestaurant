@@ -17,7 +17,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost:1234/restaurante/';
+
+//Aqui tuve que cambiar la ruta para poder acceder
+$config['base_url'] = 'http://localhost:8008/ProyectoRestaurant/';
 
 /*
 |--------------------------------------------------------------------------
