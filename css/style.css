@@ -1,0 +1,61 @@
+.agregarPedido{
+	text-decoration: none;
+	font-family: cursive;
+	font-size: 1.2em;
+}
+.carta{
+	padding: 1.0em;
+	margin : 1.5em;
+	background-color: #FFF;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: Times;
+}
+#addPedido,#ingrediente{
+	margin: 2em;
+}
+#botonLoguear{
+	margin: 2.0em 0em;
+}
+#botonM{
+	padding: 0em;
+	margin: 0em;
+}
+#botonP{
+	background: #000;
+	border-radius: 1.0em;
+	padding: 1.0em;
+	text-decoration: none;
+	font-family: cursive;
+	font-size: 1.2em;
+}
+#botonPagar{
+	text-align: center;
+	padding: 1.5em 0em;
+}
+#contenido{
+	background-color: #ccc;
+}
+#footerLogueo{
+	text-align: right;
+	font-size: 0.8em;
+}
+#letrero{
+	font-size: 2.0em;
+	text-align: center;
+	margin: 0em;
+	padding: 0em 1.0em 1.0em 1.0em;
+}
+#mensaje{
+	text-align: center;
+	font-size: 1.2em;
+}
+#precioPagar{
+	text-align: center;
+	font-size: 1.5em;
+	font-family: cursive;
+	margin: 1.0em;
+}
+#rVenta{
+	margin-top: 2.0em;
+}
