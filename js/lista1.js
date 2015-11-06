@@ -1,19 +1,30 @@
+/**
+ * Recomendación!
+ * NO uses rutas absolutas en las peticiones
+ * usa la ruta relativa desde la raiz de tu proyecto,
+ * si cambias de host, tienes que cambiar TODO
+ * --------------------------------------------------
+ * 
+ * Cambié las rutas de las imágenes porque no cargaban desde img/archivo.jpg
+ * la puse en ../img/archivo
+ * */
+
 var numMesa;
 var idPlatoSelec;
 
 $(document).on('pagebeforeshow','#pagina',function(){
 	
-	$.getJSON('http://localhost:1234/restaurante/index.php/carta/listar',
+	$.getJSON('/ProyectoRestaurant/index.php/carta/listar',
 	function(data){
 		$('#listaPlatos').html("");
 		for (var i = 0; i < data.length; i++) {
-			$('#listaPlatos').append('<div class="carta"><input type="hidden" value='+data[i].idplato+'></input><a class="agregarPedido" href="#agregar" data-role="button" data-transition="slide"><div data-theme="b"><div><img height="200px" width="285px" src="img/'+data[i].imagen+'"></div><div>'+data[i].nombre+'</div><div>S/.'+data[i].precio+'</div></div></a></div>');
+			$('#listaPlatos').append('<div class="carta"><input type="hidden" value='+data[i].idplato+'></input><a class="agregarPedido" href="#agregar" data-role="button" data-transition="slide"><div data-theme="b"><div><img height="200px" width="285px" src="../img/'+data[i].imagen+'"></div><div>'+data[i].nombre+'</div><div>S/.'+data[i].precio+'</div></div></a></div>');
 			$(".carta").unbind('click').click(cargar);
 			$('#listaPlatos').listview('refresh');
 		}
 	});
 
-	$.getJSON('http://localhost:1234/restaurante/index.php/carta/listarPlatos',
+	$.getJSON('/ProyectoRestaurant/index.php/carta/listarPlatos',
 	function(data){
 		$('#ListaTipoPlatos').html("");
 		for (var i = 0; i < data.length; i++) {
@@ -30,15 +41,15 @@ $(document).on('pagebeforeshow','#pagina',function(){
 function cargar(){
 	var objeto=$(this).children("input").val();
 
-	$.getJSON('http://localhost:1234/restaurante/index.php/carta/listarPlato/'+objeto,
+	$.getJSON('/ProyectoRestaurant/index.php/carta/listarPlato/'+objeto,
 	function(data){
 		$('#listaPlato').html("");
 		for (var i = 0; i < data.length; i++) {
-			$('#listaPlato').append('<div><input id="platoSelec" type="hidden" value='+data[i].idplato+'></input><a class="agregarPedido" href="#agregar" data-role="button" data-transition="slide"><div data-theme="b"><div><img height="200px" width="285px" src="img/'+data[i].imagen+'"></div><div>'+data[i].nombre+'</div><div>S/.'+data[i].precio+'</div></div></a></div>');
+			$('#listaPlato').append('<div><input id="platoSelec" type="hidden" value='+data[i].idplato+'></input><a class="agregarPedido" href="#agregar" data-role="button" data-transition="slide"><div data-theme="b"><div><img height="200px" width="285px" src="../img/'+data[i].imagen+'"></div><div>'+data[i].nombre+'</div><div>S/.'+data[i].precio+'</div></div></a></div>');
 		}
 	});
 	
-	$.getJSON('http://localhost:1234/restaurante/index.php/carta/listarInsumos/'+objeto,
+	$.getJSON('/ProyectoRestaurant/index.php/carta/listarInsumos/'+objeto,
 	function(data){
 		$('#ingrediente').html("");
 		for (var i = 0; i < data.length; i++) {
@@ -50,7 +61,7 @@ function cargar(){
 function listarPorTipos(){
 	var objeto=$(this).children("input").val();
 
-	$.getJSON('http://localhost:1234/restaurante/index.php/carta/listarPorTipoPlato/'+objeto,
+	$.getJSON('/ProyectoRestaurant/index.php/carta/listarPorTipoPlato/'+objeto,
 	function(data){
 		$('#listaPlatos').html("");
 		for (var i = 0; i < data.length; i++) {
@@ -62,7 +73,7 @@ function listarPorTipos(){
 }
 
 function seleccionaMesa(){
-	$.getJSON('http://localhost:1234/restaurante/index.php/carta/listarMesa/',
+	$.getJSON('/ProyectoRestaurant/index.php/carta/listarMesa/',
 	function(data){
 		$('#opcionesdemesa').html('');
 		for (var i = 0 ; i < data.length ; i++) {
