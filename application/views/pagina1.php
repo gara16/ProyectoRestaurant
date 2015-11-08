@@ -15,7 +15,9 @@
 		<div data-role="page" id="listado">
 			<!--cabecera-->
 			<div data-role="header" data-id="unico" data-theme="b" disabled="disabled" data-position="fixed">
-				<div id="botonM"><a href="#dialogoMesa" data-transition="pop" data-rel="dialog" data-role="button" data-iconpos="notext" data-icon="gear"></a></div>
+				<div id="botonM">
+                    <a href="#dialogoMesa" data-transition="pop" data-rel="dialog" data-role="button" data-iconpos="notext" data-icon="gear"></a>
+                </div>
 				<div id="letrero">RESTAURANTE "LO NUESTRO"</div>
 			</div>
 			<!--contenido-->
