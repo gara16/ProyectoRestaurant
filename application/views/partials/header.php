@@ -19,7 +19,7 @@
 			<!--cabecera-->
 			<div data-role="header">
                 <a href="#menuDialog" data-rel="dialog">Menu</a>
-                <h1>Titulo</h1>
+                <h1>:::Restaurante "Lo Nuestro":::</h1>
 			</div>
 			<!--contenido-->
             <div data-role="content">
