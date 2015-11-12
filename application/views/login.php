@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>:::Restaurante "Lo Nuestro":::</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="<?php echo base_url();?>jqueryMobile/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>jqueryMobile/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>jqueryMobile/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
     <script type="text/javascript" src="<?php echo base_url();?>jqueryMobile/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>

@@ -99,4 +99,38 @@ class Restaurante extends CI_Model{
 		} else return false;
 	}
 
+    /**
+     * Cocinero
+     */
+    function listaPedidos() {
+        /**
+         * SELECT pp.idPlatoPedido 'id', m.mesa 'Mesa', pl.nombre 'Plato', pp.estado 'Estado'
+            FROM plato_pedido pp
+            INNER JOIN pedido pe
+            ON pp.idPedido = pe.idPedido
+            INNER JOIN mesa m
+            ON pe.idMesa = m.idMesa
+            INNER JOIN plato pl
+            ON pl.idplato = pp.idplato
+         */
+        $data = $this->db
+                ->select("pp.idPlatoPedido id, m.mesa Mesa, pl.nombre Plato, pp.estado Estado")
+                ->from("plato_pedido pp")
+                ->join("pedido pe", "pp.idPedido = pe.idPedido")
+                ->join("mesa m", "pe.idMesa = m.idMesa")
+                ->join("plato pl", "pl.idplato = pp.idplato")
+                ->order_by("pp.estado")
+                ->get()
+                ->result();
+
+        return $data;
+    }
+    function servirPedido($id){
+        $this->db->where('idPlatoPedido', $id);
+		if ($this->db->update('plato_pedido',array("estado"=>1))) {
+			return true;
+		} else {
+            return false;
+        }
+    }
 }

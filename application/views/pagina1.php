@@ -51,7 +51,7 @@
 				<div id="listaPlato"></div>
 				<h2>Ingredientes</h2>
 				<ul id="ingrediente" data-role="listview" data-type="horizontal" data-theme="b"></ul>
-				<a href="#dialogo" id="addPedido" data-transition="pop" data-rel="dialog" href="" data-role="button" data-theme="a">Agregar a Pedido</a>
+				<a href="#dialogo" id="addPedido" data-transition="pop" data-rel="dialog" data-role="button" data-theme="a">Agregar a Pedido</a>
 			</div>
 	    </div>
 

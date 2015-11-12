@@ -12,6 +12,6 @@ function loguear(){
 	if (usuario=='' || password=='') {
 		$('#mensaje').html('Ingrese usuario y contraseña');
 	}else{
-		$.post('http://localhost:1234/restaurante/index.php/clogin/logueo/'+usuario+'/'+password);
+		$.post('/ProyectoRestaurant/index.php/clogin/logueo/'+usuario+'/'+password);
 	}
 }
