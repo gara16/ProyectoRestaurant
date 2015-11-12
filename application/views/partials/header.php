@@ -14,10 +14,11 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>js/lista1.js"></script>
     </head>
     <body>
+        
 		<div data-role="page">
 			<!--cabecera-->
 			<div data-role="header">
-                <a href="#">Menu</a>
+                <a href="#menuDialog" data-rel="dialog">Menu</a>
                 <h1>Titulo</h1>
 			</div>
 			<!--contenido-->
