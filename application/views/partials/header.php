@@ -12,5 +12,6 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>jqueryMobile/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/eventosLogueo.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/lista1.js"></script>
+        <script src="<?php echo base_url(); ?>js/cocinero.js" type="text/javascript"></script>
     </head>
     <body>

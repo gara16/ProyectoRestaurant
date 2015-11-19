@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>:::Restaurante "Lo Nuestro":::</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="<?php echo base_url();?>jqueryMobile/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>jqueryMobile/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
-	<script type="text/javascript" src="<?php echo base_url();?>jqueryMobile/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
-	<script type="text/javascript" src="<?php echo base_url();?>js/lista1.js"></script>
-</head>
-<body>
+<?php include_once 'partials/header.php'; ?>
 	<div id="pagina">
 		<div data-role="page" id="listado">
 			<!--cabecera-->
@@ -107,5 +95,4 @@
 	    </div>
     </div>
 </div>
-</body>
-</html>
+<?php include_once 'partials/footer.php'; ?>
