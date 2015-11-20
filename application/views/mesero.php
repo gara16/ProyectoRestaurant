@@ -1,5 +1,5 @@
 <?php include_once 'partials/header.php'; ?>
-<div data-role="page">
+<div data-role="page" id="page_mesero">
     <div data-role="header" data-add-back-btn="true">
         <h1>Restaurante "Lo Nuestro"</h1>
         <a href="#menuDialog" data-rel="dialog" class="ui-btn-right">Menu</a>
@@ -17,7 +17,7 @@
         </div>
         <div>
             <h4>Lista de Platos y bebidas</h4>
-            <ul data-role="listview" id="carta"></ul>
+            <ul data-role="listview" id="carta_mesero"></ul>
         </div>
     </div>
 </div>
