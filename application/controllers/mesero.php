@@ -36,4 +36,11 @@ class mesero extends CI_Controller {
         $data["mesas"] = $this->restaurante->listarMesa();
         $this->load->view("mesero.php", $data);
     }
+    
+    public function detalle($codigo){
+        $data["carta"] = $this->restaurante->listarPlato($codigo);
+        $data["insumos"] = $this->restaurante->listarIngrediente($codigo);
+        
+        $this->load->view("detalle_carta", $data);
+    }
 }
