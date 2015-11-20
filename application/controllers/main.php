@@ -26,11 +26,29 @@ class main extends CI_Controller {
     //put your code here
     public function __construct() {
         parent::__construct();
-        $this->load->helper("url");
+        
+        $this->load->helper(array("form", "url"));
+        $this->load->library('form_validation');
         $this->load->model("restaurante");
     }
     
     public function index() {
         $this->load->view("main.php");
+    }
+    
+    public function login() {
+        
+        if (!isset($_POST['uname'], $_POST['upass'])){
+            $this->load->view("login.php");
+        } else {
+            $this->form_validation->set_rules('uname', 'NombreUsuario' ,'required|trim');
+            $this->form_validation->set_rules('upass', 'Contrasena','required|trim');
+            
+            if ($this->form_validation->run()==FALSE){
+                $this->load->view("login.php");
+            } else {
+                $this->load->view("main.php");
+            }
+        }
     }
 }
