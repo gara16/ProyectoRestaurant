@@ -13,5 +13,6 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>js/eventosLogueo.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>js/lista1.js"></script>
         <script src="<?php echo base_url(); ?>js/cocinero.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>js/mesero.js" type="text/javascript"></script>
     </head>
     <body>
