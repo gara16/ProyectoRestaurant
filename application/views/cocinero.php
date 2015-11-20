@@ -1,5 +1,5 @@
 <?php include_once 'partials/header.php'; ?>
-<div data-role="page">
+<div data-role="page" id="page_cocinero">
     <div data-role="header" data-add-back-btn="true">
         <h1>Restaurante "Lo Nuestro"</h1>
         <a href="#menuDialog" data-rel="dialog" class="ui-btn-right">Menu</a>

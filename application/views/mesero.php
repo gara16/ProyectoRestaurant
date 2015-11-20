@@ -17,18 +17,7 @@
         </div>
         <div>
             <h4>Lista de Platos y bebidas</h4>
-            <ul data-role="listview" id="carta">
-                <li>plato1</li>
-                <li>plato2</li>
-                <li>plato3</li>
-                <li>plato4</li>
-                <li>plato5</li>
-                <li>plato6</li>
-                <li>plato7</li>
-                <li>plato8</li>
-                <li>plato9</li>
-                <li>plato10</li>
-            </ul>
+            <ul data-role="listview" id="carta"></ul>
         </div>
     </div>
 </div>
